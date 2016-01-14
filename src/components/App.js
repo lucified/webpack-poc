@@ -10,8 +10,8 @@ import CompositionOverridesDemo from './4-CompositionOverrides/CompositionOverri
 import ScopedAnimationsDemo from './5-ScopedAnimations/ScopedAnimationsDemo';
 
 var url = require("file-loader!./camel.jpg");
-
 var Testi = require('sub-project');
+var jsonUrl = require('file-loader!./data-example.json');
 
 
 export default class App extends Component {
@@ -31,8 +31,11 @@ export default class App extends Component {
             </div>
         </div>
 
-
         <Testi />
+
+        <code>
+            Find json at {jsonUrl}
+        </code>
 
 
         <h1>CSS Modules Webpack Demo</h1>
