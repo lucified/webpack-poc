@@ -1,0 +1,12 @@
+# OS directory cache files
+Thumbs.db
+.DS_Store
+
+# npm
+/node_modules/*
+!/node_modules/testi-projekti
+
+npm-debug.log
+
+# Built sources
+dist
