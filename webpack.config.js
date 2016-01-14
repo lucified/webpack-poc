@@ -23,7 +23,11 @@ module.exports = {
         test: /\.js$/,
         loaders: ['react-hot', 'babel-loader'],
         //exclude: ['node_modules'],
-        include: [path.resolve(__dirname, "src"), path.resolve(__dirname, 'node_modules/sub-project')]
+        include: [
+          path.resolve(__dirname, "src"),
+          path.resolve(__dirname, 'node_modules/sub-project'),
+          path.resolve(__dirname, 'node_modules/sub-sub-project')
+        ]
       },
       {
         test: /\.css$/,
