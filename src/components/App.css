@@ -11,3 +11,7 @@
   border: 0;
   background: #ccc;
 }
+
+.turtle {
+   background: url('file-loader!./turtle.jpg');
+}

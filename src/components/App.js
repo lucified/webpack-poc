@@ -25,9 +25,15 @@ export default class App extends Component {
             <div>
                 <img src={url} style={{width: 500}} />
             </div>
+            <div>
+                Turtle from root project via css
+                <div className={styles.turtle} style={{width: 500, height: 500, backgroundSize: "contain", backgroundRepeat: "no-repeat"}} />
+            </div>
         </div>
 
+
         <Testi />
+
 
         <h1>CSS Modules Webpack Demo</h1>
 
