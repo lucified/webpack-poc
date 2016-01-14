@@ -10,7 +10,8 @@ import CompositionOverridesDemo from './4-CompositionOverrides/CompositionOverri
 import ScopedAnimationsDemo from './5-ScopedAnimations/ScopedAnimationsDemo';
 
 var url = require("file-loader!./camel.jpg");
-var Testi = require('testi-projekti');
+
+var Testi = require('sub-project');
 
 
 export default class App extends Component {
@@ -20,8 +21,7 @@ export default class App extends Component {
         <Logo />
 
         <div>
-            Kameli javascriptistä omasta projektista jep
-
+            Camel from root project via javascript
             <div>
                 <img src={url} style={{width: 500}} />
             </div>

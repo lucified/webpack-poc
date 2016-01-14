@@ -4,7 +4,7 @@ Thumbs.db
 
 # npm
 /node_modules/*
-!/node_modules/testi-projekti
+!/node_modules/sub-project
 
 npm-debug.log
 
