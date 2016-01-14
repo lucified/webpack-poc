@@ -13,5 +13,5 @@
 }
 
 .turtle {
-   background: url('file-loader!./turtle.jpg');
+   background: url('./turtle.jpg');
 }

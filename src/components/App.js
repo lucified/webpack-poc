@@ -8,7 +8,9 @@ import ClassCompositionDemo from './3-ClassComposition/ClassCompositionDemo';
 import CompositionOverridesDemo from './4-CompositionOverrides/CompositionOverridesDemo';
 import ScopedAnimationsDemo from './5-ScopedAnimations/ScopedAnimationsDemo';
 
-var url = require("file-loader!./camel.jpg");
+var url = require("./camel.jpg");
+//var url = require("camel.jpg");
+
 var Testi = require('sub-project');
 var jsonUrl = require('file-loader!./data-example.json');
 
@@ -21,8 +23,8 @@ export default class App extends Component {
       <div className={styles.app}>
         <Logo />
 
-        <div className="test">
-            Moi
+        <div className={styles2.test}>
+            Red text via mixin from subproject
         </div>
 
         <div>

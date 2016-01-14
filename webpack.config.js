@@ -39,8 +39,13 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
-      }
+        loaders: ["style", "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]", "sass"]
+      },
+      {
+        test: /\.(jpeg|jpg|gif|png|json)$/,
+        loaders: ["file-loader?name=[name]-[hash:12].[ext]"]
+      },
+
     ]
   }
 }
