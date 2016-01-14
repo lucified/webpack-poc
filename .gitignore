@@ -3,8 +3,7 @@ Thumbs.db
 .DS_Store
 
 # npm
-/node_modules/*
-!/node_modules/sub-project
+node_modules
 
 npm-debug.log
 

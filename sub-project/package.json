@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "sub-sub-project": "^1.0.0"
+  },
   "devDependencies": {
   }
 }
