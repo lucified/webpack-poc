@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styles from './App.css';
 
-
 import Logo from './0-Logo/Logo';
 import ScopedSelectorsDemo from './1-ScopedSelectors/ScopedSelectorsDemo';
 import GlobalSelectorsDemo from './2-GlobalSelectors/GlobalSelectorsDemo';
@@ -13,12 +12,18 @@ var url = require("file-loader!./camel.jpg");
 var Testi = require('sub-project');
 var jsonUrl = require('file-loader!./data-example.json');
 
+import styles2 from './App.scss';
+
 
 export default class App extends Component {
   render() {
     return (
       <div className={styles.app}>
         <Logo />
+
+        <div className="test">
+            Moi
+        </div>
 
         <div>
             Camel from root project via javascript

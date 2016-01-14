@@ -1,0 +1,8 @@
+
+@import '~sub-project/mixins.scss';
+
+.test {
+    font-size: 3rem;
+    @include redColor();
+}
+
