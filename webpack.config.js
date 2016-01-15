@@ -1,14 +1,8 @@
 var webpack = require('webpack'),
-    path = require('path'),
-    babelSettings = {
-      cacheDirectory: true,
-      presets: ['es2015', 'react']
-    }
+    path = require('path')
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
     './src/index.js'
   ],
   output: {
@@ -17,25 +11,14 @@ module.exports = {
   },
   resolve: {
     modulesDirectories: ['node_modules', 'components'],
-    //extensions: [ '', '.js', '.jsx', '.css', '.scss' ],
-    fallback: path.join(__dirname, "node_modules")
   },
-  resolveLoader: {
-    root: path.join(__dirname, "node_modules")
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['react-hot','babel?'+JSON.stringify(babelSettings)],
-        //exclude: ['node_modules'],
+        loaders: ['babel'],
         include: [
-         path.resolve(__dirname, "src"),
-         path.resolve(__dirname, 'node_modules/sub-project'),
-         path.resolve(__dirname, 'node_modules/sub-sub-project')
+         path.resolve(__dirname, "src")
         ]
       },
       {
@@ -58,7 +41,6 @@ module.exports = {
         test: /\.(jpeg|jpg|gif|png|json)$/,
         loaders: ["file-loader?name=[name]-[hash:12].[ext]"]
       }
-
     ]
   }
 }

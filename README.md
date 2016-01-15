@@ -20,6 +20,14 @@ $ npm publish ./sub-sub-project
 $ npm publish ./sub-project
 ```
 
+## About writing NPM modules with ES6
+http://slides.com/vvo/authoring-and-publishing-es6-modules-today-dotjs-2015#/23
+http://jamesknelson.com/writing-npm-packages-with-es6-using-the-babel-6-cli/
+
+## About React Hot Module Replcement
+Package `react-hot-loader` doesn't work with React 0.14 and is deprecated. See https://github.com/gaearon/react-transform-boilerplate instead. 
+
+
 ## Run the example
 
 ```bash
