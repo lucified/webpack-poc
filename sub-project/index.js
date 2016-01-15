@@ -1,13 +1,13 @@
 
-import styles from './Index.css';
-import styles2 from './Index.scss';
+import styles from './assets/Index.css';
+import styles2 from './assets/Index.scss';
 
 
 var React = require('react');
 var Sub = require('sub-sub-project');
 
 
-var url = require("./giraffe.jpg");
+var url = require("./assets/giraffe.jpg");
 
 //var url = require("./giraffe.jpg");
 

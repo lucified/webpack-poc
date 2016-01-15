@@ -1,10 +1,10 @@
 var React = require('react');
 
-import styles from './Index.css';
+import styles from './assets/Index.css';
 
 // is actually a parrot, but we use the name giraffe
 // to demonstrate that there is no global namespace issue
-var url = require("./giraffe.jpg");
+var url = require("./assets/giraffe.jpg");
 
 
 module.exports = React.createClass({
